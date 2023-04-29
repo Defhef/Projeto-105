@@ -22,9 +22,6 @@ height, width, channels = frame.shape
 
 images. frame = cv2.imread(imagens[0])
 
-if ext in ['.gif', '.png', '.jpg', '.jpeg', '.jfif']:
-    file_name = path+'/'+file
-
 out = cv2.VideoWriter("project.avi",cv2.VideoWriter_fourcc(*"DIVX"), 0.8,size)
 
 for i in range(count-1, 0 , -1):
